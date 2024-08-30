@@ -35,6 +35,7 @@
 #endif
 
 #include "MQTTPacket.h"
+#include "mqtt_client.h"
 
 #if defined(MQTTCLIENT_PLATFORM_HEADER)
 /* The following sequence of macros converts the MQTTCLIENT_PLATFORM_HEADER value
@@ -97,7 +98,7 @@ typedef struct MQTTConnackData
 
 typedef struct MQTTSubackData
 {
-    enum QoS grantedQoS;
+    int grantedQoS;
 } MQTTSubackData;
 
 typedef void (*messageHandler)(MessageData*);

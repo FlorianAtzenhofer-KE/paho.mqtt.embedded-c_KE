@@ -35,7 +35,7 @@
 #endif
 
 #include "MQTTPacket.h"
-#include "mqtt_client.h"
+#include "mqtt_client_sys_functions.h"
 
 #if defined(MQTTCLIENT_PLATFORM_HEADER)
 /* The following sequence of macros converts the MQTTCLIENT_PLATFORM_HEADER value
